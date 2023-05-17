@@ -7,6 +7,10 @@ import BACKEND from '../component/backEnd'
 import FRONTEND from '../component/frontEnd'
 import TIMELINE from '../component/timeLine'
 // npm install gh-pages --save-dev
+// git add .
+// git commit -m "deploy"
+// git push
+//npm run depoly
 
 const Home = () => {
   const [backFrontSwicher, setBackFrontSwicher] = useState(true);
