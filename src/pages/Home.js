@@ -10,7 +10,7 @@ import TIMELINE from '../component/timeLine'
 // git add .
 // git commit -m "deploy"
 // git push
-//npm run depoly
+//npm run deploy
 
 const Home = () => {
   const [backFrontSwicher, setBackFrontSwicher] = useState(true);
@@ -47,7 +47,7 @@ const Home = () => {
           <div className='basis-3/12 hidden md:block'></div>
           <div className='md:basis-4/12 md:p-0 p-10'>
             <div className='text-3xl sm:text-4xl'>Hi, I am Huikai Ling.</div>
-            <div className='text-5xl sm:text-6xl my-6'>I am looking for junior IT job.</div>
+            <div className='text-5xl sm:text-6xl my-6'>I am looking for a junior IT job.</div>
 
             <div className='text-xl sm:text-2xl'><TypeAnimation
               sequence={[
@@ -74,7 +74,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="text-2xl sm:text-3xl p-10 sm:p-20 text-text-color">backend Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini</div>
+      <div className="text-2xl sm:text-3xl p-10 sm:p-20 text-text-color">Final year Information Technology student from the University of RMIT with experience gained in full stack development. Especially interested in solving difficult problems with perseverance. Prefer the identity of a back-end developer or tester throughout the development process. Seeking a junior developer role to deepen my understanding of the entire IT project development process. Lay the foundation for leading the team in the future.</div>
 
 
 
