@@ -2,10 +2,10 @@ import developer from "../assets/developer-3461405.png";
 import { TypeAnimation } from 'react-type-animation';
 import VanillaTilt from "vanilla-tilt";
 import { useState, useEffect } from "react";
-import CARD from '../component/card'
 import BACKEND from '../component/backEnd'
 import FRONTEND from '../component/frontEnd'
 import TIMELINE from '../component/timeLine'
+
 // npm install gh-pages --save-dev
 // git add .
 // git commit -m "deploy"
@@ -39,7 +39,7 @@ const Home = () => {
     }
     return () => {
     };
-  }, []);
+  }, [backFrontSwicher]);
   return (
     <div>
       <div className='h-screen w-full flex justify-center	font-roboto text-text-color'>
@@ -80,45 +80,7 @@ const Home = () => {
 
       <TIMELINE />
       {backFrontSwicher ? <BACKEND switcher={handleSwitcher} /> : <FRONTEND switcher={handleSwitcher} />}
-
-      <div className="text-3xl sm:text-5xl px-10 sm:px-20 text-text-color mt-5">backend work project</div>
-      <div className='sec flex overflow-x-scroll scrollbar-none' id="portfolio">
-        <div className="flex shrink-0 overflow-hidden">
-          <CARD
-            name={"xxxxx"}
-            decription={"aadaaaadaaaadadada"}
-          /></div>
-        <div className="flex shrink-0 overflow-hidden">
-          <CARD
-            name={"xxxxx"}
-            decription={"aadaaaadaaaadadada"}
-          /></div><div className="flex shrink-0 overflow-hidden">
-          <CARD
-            name={"xxxxx"}
-            decription={"aadaaaadaaaadadada"}
-          /></div>
-        <div className="flex shrink-0 overflow-hidden">
-          <CARD
-            name={"xxxxx"}
-            decription={"aadaaaadaaaadadada"}
-          /></div><div className="flex shrink-0 overflow-hidden">
-          <CARD
-            name={"xxxxx"}
-            decription={"aadaaaadaaaadadada"}
-          /></div><div className="flex shrink-0 overflow-hidden">
-          <CARD
-            name={"xxxxx"}
-            decription={"aadaaaadaaaadadada"}
-          /></div>
-      </div>
-
-
-      <div className="">
-
-      </div>
     </div>
-
-
   );
 }
 
