@@ -11,7 +11,10 @@ module.exports = {
 
       fontFamily: {
         roboto: ["var(--font-roboto)"],
-      }
+      },
+      backgroundImage:{
+        'domum':"url('/src/assets/domum.png')"
+      } 
     },
   },
   plugins: [],

@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import BACKEND from '../component/backEnd'
 import FRONTEND from '../component/frontEnd'
 import TIMELINE from '../component/timeLine'
-
+import DomumModal from "../component/Modals/DomumModal";
 // npm install gh-pages --save-dev
 // git add .
 // git commit -m "deploy"
@@ -14,6 +14,8 @@ import TIMELINE from '../component/timeLine'
 
 const Home = () => {
   const [backFrontSwicher, setBackFrontSwicher] = useState(true);
+  const [showDomum, setShowDomum] = useState(false);
+
   function isMobileTablet() {
     var check = false;
     (function (a) {
@@ -79,7 +81,11 @@ const Home = () => {
 
 
       <TIMELINE />
-      {backFrontSwicher ? <BACKEND switcher={handleSwitcher} /> : <FRONTEND switcher={handleSwitcher} />}
+      {backFrontSwicher ? <BACKEND switcher={handleSwitcher} setShowDomum={setShowDomum} /> : <FRONTEND switcher={handleSwitcher} />}
+      <DomumModal
+      isOpen={showDomum}
+      closeModal={() => setShowDomum(false)}
+      />
     </div>
   );
 }

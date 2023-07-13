@@ -1,27 +1,33 @@
 import CARD from '../component/card'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination } from "swiper";
+// import { EffectCoverflow, Pagination } from "swiper";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-function backEnd({ switcher }) {
+function backEnd({ switcher, setShowDomum }) {
     const backendCardInfor = [{
+        url:"domum",
+        number:"01",
+        name: "1",
+        decription: "not ready",
+        readMore:setShowDomum
+    },{
+        url:"",
+        number:"01",
         name: "1",
         decription: "not ready"
-    }, {
-        name: "2",
+    },{
+        url:"",
+        number:"01",
+        name: "1",
         decription: "not ready"
-    }, {
-        name: "2",
+    },{
+        url:"",
+        number:"01",
+        name: "1",
         decription: "not ready"
-    }, {
-        name: "2",
-        decription: "not ready"
-    }, {
-        name: "2",
-        decription: "not ready"
-    }]
+    },]
     return (
         <div>
             <div className="p-5 sm:p-10 flex flex-col md:flex-row justify-center md:items-center text-text-color">
@@ -105,11 +111,14 @@ function backEnd({ switcher }) {
                     }}
                 >
                     {backendCardInfor.map((item) => (
-                        <SwiperSlide><div className="flex shrink-0 overflow-hidden">
+                        <SwiperSlide><div className="flex shrink-0">
 
                             <CARD
+                                url={item.url}                                
+                                number={item.number}
                                 name={item.name}
                                 decription={item.decription}
+                                readMore={item.readMore}
                             /></div></SwiperSlide>
                     ))}</Swiper>
             </div>
