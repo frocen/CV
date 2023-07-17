@@ -41,36 +41,37 @@ function backEnd({ switcher, setShowDomum }) {
                 <div className="md:basis-1/2">
                     <div class="flex flex-row gap-10 flex-wrap justify-center">
                         <div class="basis-1/3 lg:basis-1/4">
-                            <div>XXX</div>
+                            <div>Java</div>
                             <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: "45%" }}> 45%</div>
+                                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: "91%" }}> 91%</div>
                             </div>
                         </div>
                         <div class="basis-1/3 lg:basis-1/4">
-                            <div>XXX</div>
+                            <div>PHP</div>
                             <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: "45%" }}> 45%</div>
+                                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: "87%" }}> 87%</div>
                             </div>
                         </div>
                         <div class="basis-1/3 lg:basis-1/4">
-                            <div>XXX</div>
+                            <div>Python</div>
                             <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: "45%" }}> 45%</div>
+                                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: "82.6%" }}> 82.6%</div>
                             </div>
                         </div>
                         <div class="basis-1/3 lg:basis-1/4">
-                            <div>XXX</div>
+                            <div>Database:</div>
                             <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: "45%" }}> 45%</div>
+                                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: "88.25%" }}> 88.25%</div>
                             </div>
                         </div>
                         <div class="basis-1/3 lg:basis-1/4">
-                            <div>XXX</div>
+                            <div>Scrum project</div>
                             <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: "45%" }}> 45%</div>
+                                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style={{ width: "83.3%" }}> 83.3%</div>
                             </div>
                         </div>
                     </div>
+                    <div className='text-md flex justify-center md:justify-end mt-8'><div className='md:w-1/3'>Percentages represent the average course grade for the programming language used</div></div>
                 </div>
             </div>
             <div className='flex w-full justify-center'>
