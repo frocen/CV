@@ -5,12 +5,13 @@ import { EffectCoverflow, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-function frontEnd({ switcher }) {
+function frontEnd({ switcher, setReactSocialMedia, setFirstWebProject }) {
     const frontendCardInfor = [{
         url:"",
         number:"01",
-        name: "1",
-        decription: "not ready"
+        name: "Social media",
+        decription: "This is a two-person project. I am responsible for part of the front-end page, and the connection with the back-end.",
+        readMore:setReactSocialMedia
     },{
         url:"",
         number:"01",
@@ -23,9 +24,10 @@ function frontEnd({ switcher }) {
         decription: "not ready"
     },{
         url:"",
-        number:"01",
-        name: "1",
-        decription: "not ready"
+        number:"04",
+        name: "First web project",
+        decription: "The first team web project",
+        readMore:setFirstWebProject
     },]
     return (
         <div>

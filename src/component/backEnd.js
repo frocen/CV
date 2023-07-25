@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-function backEnd({ switcher, setShowDomum }) {
+function backEnd({ switcher, setShowDomum}) {
     const backendCardInfor = [{
         url:"domum",
         number:"01",
@@ -27,6 +27,7 @@ function backEnd({ switcher, setShowDomum }) {
         number:"01",
         name: "1",
         decription: "not ready"
+
     },]
     return (
         <div>
