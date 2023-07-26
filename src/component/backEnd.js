@@ -10,7 +10,7 @@ function backEnd({ switcher, setShowDomum}) {
         url:"domum",
         number:"01",
         name: "1",
-        decription: "not ready",
+        decription: "This is a video sharing platform about fitness and sports, suitable for various devices.",
         readMore:setShowDomum
     },{
         url:"",
@@ -24,9 +24,9 @@ function backEnd({ switcher, setShowDomum}) {
         decription: "not ready"
     },{
         url:"",
-        number:"01",
-        name: "1",
-        decription: "not ready"
+        number:"04",
+        name: "Others",
+        decription: "The JavaFX and Gterm markets are rare. They all scored well."
 
     },]
     return (
