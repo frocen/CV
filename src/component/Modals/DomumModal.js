@@ -4,7 +4,6 @@ export default function DomumModal({isOpen, closeModal}){
         <AbstractModal title="Domum Gym" isOpen={isOpen} closeModal={closeModal}>
           <p>
           I was responsible for making the pages about us, normal user profile, professional user profile, sidebar for the studio (including layout changes) and the old home page (Discarded by the design department).
-      </p>
       <br/><br/>
       Link:
       https://beta.domumgym.com/
@@ -22,7 +21,7 @@ export default function DomumModal({isOpen, closeModal}){
       https://beta.domumgym.com/studio/dashboardProfessional
       <br/>
       and
-      https://beta.domumgym.com/studio/
+      https://beta.domumgym.com/studio/</p>
         </AbstractModal>
       );
 }

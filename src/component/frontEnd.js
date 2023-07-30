@@ -5,7 +5,7 @@ import { EffectCoverflow, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-function frontEnd({ switcher, setReactSocialMedia, setFirstWebProject }) {
+function frontEnd({ switcher, setReactSocialMedia, setShowDomum, setShowVaccine, setFirstWebProject }) {
     const frontendCardInfor = [{
         url:"",
         number:"01",
@@ -13,15 +13,17 @@ function frontEnd({ switcher, setReactSocialMedia, setFirstWebProject }) {
         decription: "This is a two-person project. I am responsible for part of the front-end page, and the connection with the back-end.",
         readMore:setReactSocialMedia
     },{
-        url:"",
-        number:"01",
-        name: "1",
-        decription: "not ready"
+        url:"domum",
+        number:"02",
+        name: "Domum Gym",
+        decription: "This is a video sharing platform about fitness and sports, suitable for various devices.",
+        readMore:setShowDomum
     },{
         url:"",
-        number:"01",
-        name: "1",
-        decription: "not ready"
+        number:"03",
+        name: "Vaccine app",
+        decription: "This is a vaccine appointment software.",
+        readMore:setShowVaccine
     },{
         url:"",
         number:"04",

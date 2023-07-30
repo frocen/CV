@@ -5,23 +5,25 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-function backEnd({ switcher, setShowDomum}) {
+function backEnd({ switcher, setShowVaccine, setShowClinic, setShowWordle}) {
     const backendCardInfor = [{
-        url:"domum",
-        number:"01",
-        name: "1",
-        decription: "This is a video sharing platform about fitness and sports, suitable for various devices.",
-        readMore:setShowDomum
-    },{
         url:"",
         number:"01",
-        name: "1",
-        decription: "not ready"
+        name: "Vaccine app",
+        decription: "This is a vaccine appointment software.",
+        readMore:setShowVaccine
     },{
         url:"",
-        number:"01",
-        name: "1",
-        decription: "not ready"
+        number:"02",
+        name: "Clinic app",
+        decription: "This is software used by a small clinic.",
+        readMore:setShowClinic
+    },{
+        url:"",
+        number:"03",
+        name: "wordle",
+        decription: "This is a word guessing game.",
+        readMore:setShowWordle
     },{
         url:"",
         number:"04",
