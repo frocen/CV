@@ -6,6 +6,11 @@ import BACKEND from '../component/backEnd'
 import FRONTEND from '../component/frontEnd'
 import TIMELINE from '../component/timeLine'
 import DomumModal from "../component/Modals/DomumModal";
+import ClinicModal from "../component/Modals/ClinicModal";
+import FirstWebProjectModal from "../component/Modals/FirstWebProjectModal";
+import ReactSocialMediaModal from "../component/Modals/ReactSocialMediaModal";
+import WordleModal from "../component/Modals/WordleModal";
+import VaccineModal from "../component/Modals/VaccineModal";
 // npm install gh-pages --save-dev
 // git add .
 // git commit -m "deploy"
@@ -15,6 +20,12 @@ import DomumModal from "../component/Modals/DomumModal";
 const Home = () => {
   const [backFrontSwicher, setBackFrontSwicher] = useState(true);
   const [showDomum, setShowDomum] = useState(false);
+  const [showVaccine, setShowVaccine] = useState(false);
+  const [showClinic, setShowClinic] = useState(false);
+  const [showWordle, setShowWordle] = useState(false);
+  const [showReactSocialMedia, setReactSocialMedia] = useState(false);
+  const [showFirstWebProject, setFirstWebProject] = useState(false);
+
 
   function isMobileTablet() {
     var check = false;
@@ -76,15 +87,39 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="text-2xl sm:text-3xl p-10 sm:p-20 text-text-color">Final year Information Technology student from the University of RMIT with experience gained in full stack development. Especially interested in solving difficult problems with perseverance. Prefer the identity of a back-end developer or tester throughout the development process. Seeking a junior developer role to deepen my understanding of the entire IT project development process. Lay the foundation for leading the team in the future.</div>
-
-
+      <div className="text-2xl sm:text-3xl p-10 sm:p-20 text-text-color">A graduate with a strong thirst for algorithms. Experienced in multiple 
+      full-stack development and scrum academic projects. I'm looking for a
+      challenging position that will allow me to deepen my understanding of the
+      entire IT project development process. And encourage me to shorten the 
+      gap with the code wizard, who can solve complex problems with apparent 
+      ease and finesse.</div>
 
       <TIMELINE />
-      {backFrontSwicher ? <BACKEND switcher={handleSwitcher} setShowDomum={setShowDomum} /> : <FRONTEND switcher={handleSwitcher} />}
+      {backFrontSwicher ? <BACKEND switcher={handleSwitcher} setShowVaccine={setShowVaccine} setShowClinic={setShowClinic} setShowWordle={setShowWordle}/> 
+      : <FRONTEND switcher={handleSwitcher} setReactSocialMedia={setReactSocialMedia} setShowDomum={setShowDomum} setShowVaccine={setShowVaccine} setFirstWebProject={setFirstWebProject}/>}
       <DomumModal
       isOpen={showDomum}
       closeModal={() => setShowDomum(false)}
+      />
+      <ClinicModal
+      isOpen={showClinic}
+      closeModal={() => setShowClinic(false)}
+      />
+      <FirstWebProjectModal
+      isOpen={showFirstWebProject}
+      closeModal={() => setFirstWebProject(false)}
+      />
+      <ReactSocialMediaModal
+      isOpen={showReactSocialMedia}
+      closeModal={() => setReactSocialMedia(false)}
+      />
+      <VaccineModal
+      isOpen={showVaccine}
+      closeModal={() => setShowVaccine(false)}
+      />
+      <WordleModal
+      isOpen={showWordle}
+      closeModal={() => setShowWordle(false)}
       />
     </div>
   );

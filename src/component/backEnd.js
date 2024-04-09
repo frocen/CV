@@ -21,7 +21,7 @@ function backEnd({ switcher, setShowVaccine, setShowClinic, setShowWordle}) {
     },{
         url:"",
         number:"03",
-        name: "wordle",
+        name: "Wordle",
         decription: "This is a word guessing game.",
         readMore:setShowWordle
     },{
@@ -29,7 +29,6 @@ function backEnd({ switcher, setShowVaccine, setShowClinic, setShowWordle}) {
         number:"04",
         name: "Others",
         decription: "The JavaFX and Gterm markets are rare. They all scored well."
-
     },]
     return (
         <div>

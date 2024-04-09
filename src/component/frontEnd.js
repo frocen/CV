@@ -1,6 +1,5 @@
 import CARD from '../component/card'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination } from "swiper";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -13,7 +12,7 @@ function frontEnd({ switcher, setReactSocialMedia, setShowDomum, setShowVaccine,
         decription: "This is a two-person project. I am responsible for part of the front-end page, and the connection with the back-end.",
         readMore:setReactSocialMedia
     },{
-        url:"domum",
+        url:"[url('../src/assets/domum.png')]",
         number:"02",
         name: "Domum Gym",
         decription: "This is a video sharing platform about fitness and sports, suitable for various devices.",

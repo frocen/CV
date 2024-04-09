@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { joinClasses } from '@volusion/element-block-utils';
 import { AiOutlineClose } from "react-icons/ai";
-export default function Card({ url, number, name, decription, readMore }) {
+export default function Card({ url, number, name, decription, readMore}) {
   return (
     <div>
       <div className={joinClasses(url ? `bg-${url}` : `bg-[#ffffff1a]`,
