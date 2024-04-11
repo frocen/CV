@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-function backEnd({ switcher, setShowVaccine, setShowClinic, setShowWordle}) {
+function backEnd({ switcher, setShowVaccine, setShowClinic, setShowWordle,setShowOthers}) {
     const backendCardInfor = [{
         url:"",
         number:"01",
@@ -28,7 +28,8 @@ function backEnd({ switcher, setShowVaccine, setShowClinic, setShowWordle}) {
         url:"",
         number:"04",
         name: "Others",
-        decription: "The JavaFX and Gterm markets are rare. They all scored well."
+        decription: "The JavaFX and Gterm markets are rare. They all scored well.",
+        readMore:setShowOthers
     },]
     return (
         <div>

@@ -11,6 +11,8 @@ import FirstWebProjectModal from "../component/Modals/FirstWebProjectModal";
 import ReactSocialMediaModal from "../component/Modals/ReactSocialMediaModal";
 import WordleModal from "../component/Modals/WordleModal";
 import VaccineModal from "../component/Modals/VaccineModal";
+import OthersModal from "../component/Modals/OthersModal";
+
 // npm install gh-pages --save-dev
 // git add .
 // git commit -m "deploy"
@@ -25,6 +27,7 @@ const Home = () => {
   const [showWordle, setShowWordle] = useState(false);
   const [showReactSocialMedia, setReactSocialMedia] = useState(false);
   const [showFirstWebProject, setFirstWebProject] = useState(false);
+  const [showOthers, setShowOthers] = useState(false);
 
 
   function isMobileTablet() {
@@ -95,7 +98,7 @@ const Home = () => {
       ease and finesse.</div>
 
       <TIMELINE />
-      {backFrontSwicher ? <BACKEND switcher={handleSwitcher} setShowVaccine={setShowVaccine} setShowClinic={setShowClinic} setShowWordle={setShowWordle}/> 
+      {backFrontSwicher ? <BACKEND switcher={handleSwitcher} setShowVaccine={setShowVaccine} setShowClinic={setShowClinic} setShowWordle={setShowWordle} setShowOthers={setShowOthers}/> 
       : <FRONTEND switcher={handleSwitcher} setReactSocialMedia={setReactSocialMedia} setShowDomum={setShowDomum} setShowVaccine={setShowVaccine} setFirstWebProject={setFirstWebProject}/>}
       <DomumModal
       isOpen={showDomum}
@@ -120,6 +123,10 @@ const Home = () => {
       <WordleModal
       isOpen={showWordle}
       closeModal={() => setShowWordle(false)}
+      />
+      <OthersModal
+      isOpen={showOthers}
+      closeModal={() => setShowOthers(false)}
       />
     </div>
   );

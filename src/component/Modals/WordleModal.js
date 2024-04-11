@@ -8,7 +8,7 @@ export default function WordleModal({isOpen, closeModal}){
           This course is mainly for learning scrum systematically, and the project only requires two sprints to be completed.
           <br /><br/>
           Try this game:<br/>
-          Not ready
+          https://frocen.github.io/wordle/
       </p>
         </AbstractModal>
       );

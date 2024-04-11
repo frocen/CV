@@ -9,7 +9,7 @@ export default function ReactSocialMediaModal({isOpen, closeModal}){
           replying, likes, etc.
           <br /><br/>
           Link:<br/>
-          https://github.com/peter6055/FWP-Assignment2
+          https://github.com/frocen/Social-Media-Platform
       </p>
         </AbstractModal>
       );
