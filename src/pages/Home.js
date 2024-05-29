@@ -29,7 +29,6 @@ const Home = () => {
   const [showFirstWebProject, setFirstWebProject] = useState(false);
   const [showOthers, setShowOthers] = useState(false);
 
-
   function isMobileTablet() {
     var check = false;
     (function (a) {

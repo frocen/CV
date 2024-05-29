@@ -9,7 +9,7 @@ export default function ReactSocialMediaModal({isOpen, closeModal}){
           replying, likes, etc.
           <br /><br/>
           Link:<br/>
-          https://github.com/frocen/Social-Media-Platform
+          https://portfolio-demo-fwpa2-frontend.vercel.app
       </p>
         </AbstractModal>
       );
